@@ -10,7 +10,7 @@ module.exports.run = function(event, context) {
   var currentDate = moment(new Date()).startOf("day");
   var start = moment(currentDate).subtract(daysAgo, 'd').startOf("day").format('x');
   var end = moment(currentDate).subtract(daysAgo - 1, 'd').startOf("day").format('x');
-  console.log("queryDateStart: " + start)
+  console.log("queryDateStart: " + start);
   console.log("queryDateEnd: " + end)
   var params = {
     TableName: "addToCart",
@@ -93,3 +93,5 @@ module.exports.run = function(event, context) {
     }
   }
 }
+
+//
