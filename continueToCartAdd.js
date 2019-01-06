@@ -71,7 +71,7 @@ module.exports.run = function(event, context) {
           var hoursCurrently = parseInt(currentHour) - 2;
       }else {
         var hoursCurrently = 23
-      }
+      };
       for (var i = 0; i <= hoursCurrently; i++) {
         if (hourInspector == start) {
           var count = dateArray.reduce(function(n, val) {
