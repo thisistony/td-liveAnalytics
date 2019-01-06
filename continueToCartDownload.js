@@ -13,7 +13,7 @@ module.exports.run = function(event, context) {
   console.log("queryDateStart: " + start)
   console.log("queryDateEnd: " + end)
   var params = {
-    TableName: "addToCart",
+    TableName: "continueToCart",
     ExpressionAttributeValues: {
       ":start": parseInt(start),
       ":end": parseInt(end)
