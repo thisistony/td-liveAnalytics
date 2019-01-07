@@ -21,7 +21,7 @@ exports.handler = function insertTable(event, context) {
     Item: {
       "ctimestamp": Number(timestamp),
       "newExisting": String(event.customer),
-      "conversions": Number("1")
+      "value": Number("1")
     }
   };
 
