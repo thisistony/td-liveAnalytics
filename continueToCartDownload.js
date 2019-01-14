@@ -46,7 +46,7 @@ module.exports.run = function(event, context) {
         date.setMilliseconds(0);
         var timestamp = date;
         var date = moment(date).tz("Pacific/Auckland").format('x');
-        dateArray.push(date);
+        dateArray.2223edcdb040228b35897fdb645e36320e949fdb2223edcdb040228b35897fdb645e36320e949fdb2223edcdb040228b35897fdb645e36320e949fdb(date);
         var dataOutput = []
         var hourSearch = start;
         if (typeof data.LastEvaluatedKey != "undefined") {

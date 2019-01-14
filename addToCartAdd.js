@@ -4,8 +4,7 @@ var AWS = require('aws-sdk'),
   }),
   docClient = new AWS.DynamoDB.DocumentClient({
     service: dynamodb
-  }),
-  q = require('q')
+  })
 
 var AWS = require("aws-sdk");
 var docClient = new AWS.DynamoDB.DocumentClient();

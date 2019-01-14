@@ -38,8 +38,6 @@ module.exports.run = function(event, context) {
       for (a = 0; a < dataLength; a++) {
         phoneModel.push(data[a].phoneModel)
       }
-      //      console.log(phoneModel);
-
       let counted = []
       for (var c of phoneModel) {
         const alreadyCounted = counted.map(c => c.name)
