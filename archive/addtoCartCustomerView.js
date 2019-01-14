@@ -12,6 +12,8 @@ var docClient = new AWS.DynamoDB.DocumentClient();
 
 
 exports.handler = function insertTable(event, context) {
+  var dateInjection = JSON.stringify(event.daysAgo);
+  console.log(dateInjection);
   var date = new Date();
   var timestamp = date.getTime();
   console.log("Performing injection...")
@@ -21,7 +23,7 @@ exports.handler = function insertTable(event, context) {
     Item: {
       "ctimestamp": Number(timestamp),
       "newExisting": String(event.customer),
-      "addToCart": Number("1")
+      "conversion": Number("1")
     }
   };
 
