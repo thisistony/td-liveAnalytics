@@ -17,3 +17,4 @@ This repo contains examples of AWS Lambda workers that will enable you to track 
  3. Create a new Lambda function and upload the repo, replacing the DynamoDB database name where required.
  4. Create an API Gateway API and attach it to your newly created Lambda function.
  5. Test to see if the data is being recorded in your database.
+ 6. Call your API endpoint using Google Tag Manager and attach it to a trigger of your liking.
